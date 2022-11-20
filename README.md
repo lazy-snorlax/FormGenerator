@@ -1,8 +1,6 @@
 # README
 
-How to Run
-
-### How do I get set up?
+### How do I run?
 
 - `composer install`
 - copy schema file to project root

@@ -7,7 +7,7 @@ How to Run
 - `composer install`
 - copy schema.xml to root
 - run `php FormGenerator.php forms` to convert all tables into forms
-- or
+  or
 - run `php FormGenerator.php forms [name]` to convert just one table
 
 ### TODO

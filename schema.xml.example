@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore">
+  <table name="tblExample" idMethod="native" phpName="Tblexample">
+    <column name="ID" phpName="Id" type="INTEGER" size="4" scale="0" primaryKey="true" autoIncrement="true" required="true"/>
+    <column name="FirstName" phpName="Firstname" type="VARCHAR" size="250" />
+    <column name="Surname" phpName="Surname" type="VARCHAR" size="250"/>
+    <column name="BirthDate" phpName="Birthdate" type="TIMESTAMP" size="4" scale="0"/>
+    <column name="Age" phpName="Age" type="INTEGER" size="4" scale="0"/>
+    <column name="Checks" phpName="Checks" type="INTEGER" size="4" scale="0"/>
+  </table>
+</database>

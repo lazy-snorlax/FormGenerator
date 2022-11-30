@@ -21,10 +21,10 @@ $app->command('forms [name]', function ($name, OutputInterface $output) {
 
     $xmldata = simplexml_load_file($schemefile) or die("Failed to load");
     foreach ($xmldata->table as $table) {
-        $tablename = ((string)$table['name']);
+        $tablename = isset($table['phpName']) ? ((string)$table['phpName']) : ((string)$table['name']);
         $export = !empty($name) ? $name == $tablename : true;
         if ($export) {
-            $filename = $templateDir . $tablename . '.html';
+            $filename = $templateDir . $tablename . '.twig';
             $output->write($filename . '...');
             $rows = [];
 
